@@ -1,12 +1,27 @@
-/* 背景图片样式 - 由 JS 动态控制轮播 */
+/* 背景图片预加载和默认设置 */
 #web_bg,
 #page-header,
 body {
+  background-image: url('/img/傍晚路灯.png') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
   transition: background-image 1.5s ease-in-out !important;
+}
+
+/* 预加载所有背景图片 */
+body::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -9999;
+  background-image: 
+    url('/img/傍晚路灯.png'),
+    url('/img/小白-煤炭镇.png'),
+    url('/img/蜡笔小新-看电视.png');
 }
 
 /* 确保背景元素正确显示 */
@@ -27,7 +42,7 @@ body {
 
 /* 给主要内容区域添加半透明背景 */
 #content-inner {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
@@ -35,12 +50,28 @@ body {
 
 /* 侧边栏卡片背景 */
 .card-widget {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
 }
 
 /* 文章卡片背景 */
 .recent-post-item {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* 文章页面主体背景 */
+#post,
+.post-content,
+#article-container {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* 归档、标签、分类页面背景 */
+#archive,
+#tag,
+#category {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 8px;
+  padding: 20px;
 }
 
 /* ========== 页脚雾化背景效果 ========== */
