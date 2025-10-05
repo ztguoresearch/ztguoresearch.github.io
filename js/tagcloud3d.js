@@ -40,25 +40,25 @@
 
     console.log('初始化侧边栏3D标签云...');
 
-    // 创建canvas容器（侧边栏版本 - 增大到3倍）
+    // 创建canvas容器（侧边栏版本 - 增大到2倍）
     const canvasWrapper = document.createElement('div');
     canvasWrapper.id = 'sidebar-tagcloud-wrapper';
     canvasWrapper.style.cssText = `
       width: 100%;
-      min-height: 900px;
+      min-height: 700px;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 50px 10px;
+      padding: 40px 10px;
       background: transparent;
-      margin: 25px 0;
+      margin: 20px 0;
     `;
 
-    // 创建canvas（增大到3倍：1200x1200）
+    // 创建canvas（增大到2倍：800x800）
     const canvas = document.createElement('canvas');
     canvas.id = 'sidebar-tagcloud-canvas';
-    canvas.width = 1200;
-    canvas.height = 1200;
+    canvas.width = 800;
+    canvas.height = 800;
     canvas.style.maxWidth = '100%';
     canvas.style.height = 'auto';
 
@@ -73,11 +73,11 @@
 
     console.log(`找到 ${tags.length} 个侧边栏标签`);
 
-    // 创建标签数据（增大到3倍字体）
+    // 创建标签数据（增大到2倍字体）
     const tagData = tags.map(tag => ({
       text: tag.textContent.trim(),
       url: tag.href,
-      size: 24 + Math.random() * 24, // 24-48px (增大到3倍)
+      size: 20 + Math.random() * 16, // 20-36px (增大到2倍)
       color: getRandomColor()
     }));
 
@@ -100,7 +100,7 @@
     const height = canvas.height;
     const centerX = width / 2;
     const centerY = height / 2;
-    const radius = Math.min(width, height) / 3;
+    const radius = Math.min(width, height) / 2; // 增大球体半径到画布的1/2
 
     // 3D标签对象
     const tags3D = tagData.map((tag, index) => {
