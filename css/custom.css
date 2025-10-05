@@ -219,60 +219,40 @@ body::after {
   box-shadow: 0 0 15px rgba(73, 177, 245, 0.3);
 }
 
-/* ========== 3D球形标签云效果 ========== */
-.tag-cloud-title {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin: 30px 0 20px;
-  padding: 15px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-}
-
-#tagcloud-canvas-wrapper {
+/* ========== 侧边栏3D球形标签云效果 ========== */
+#sidebar-tagcloud-wrapper {
   position: relative;
   width: 100%;
-  min-height: 500px;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
+  min-height: 350px;
+  background: transparent;
+  margin: 10px 0;
   overflow: hidden;
 }
 
-#tagcloud-canvas {
+#sidebar-tagcloud-canvas {
   cursor: grab;
   max-width: 100%;
   height: auto;
 }
 
-#tagcloud-canvas:active {
+#sidebar-tagcloud-canvas:active {
   cursor: grabbing;
 }
 
-/* 标签页面样式优化 */
-#tag .tag-cloud-list {
-  padding: 20px;
+/* 侧边栏标签卡片样式 */
+.card-tag-cloud {
+  position: relative;
 }
 
 /* 移动端适配 */
 @media (max-width: 768px) {
-  #tagcloud-canvas-wrapper {
-    min-height: 400px;
+  #sidebar-tagcloud-wrapper {
+    min-height: 300px;
   }
   
-  #tagcloud-canvas {
+  #sidebar-tagcloud-canvas {
     width: 100% !important;
-    height: 400px !important;
-  }
-  
-  .tag-cloud-title {
-    font-size: 20px;
-    padding: 12px;
+    height: 300px !important;
   }
 }
 

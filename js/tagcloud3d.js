@@ -14,63 +14,64 @@
   }
 
   function initTagCloud() {
-    // 检查是否在标签页面
-    const tagCloudContainer = document.querySelector('.tag-cloud-list');
-    if (!tagCloudContainer) {
-      console.log('标签云容器未找到');
+    // 只在侧边栏标签云应用3D效果，不影响标签页面
+    const sidebarTagCloud = document.querySelector('#aside-content .card-tag-cloud');
+    if (!sidebarTagCloud) {
+      console.log('侧边栏标签云容器未找到');
       return;
     }
 
-    console.log('初始化3D标签云...');
+    console.log('初始化侧边栏3D标签云...');
 
-    // 创建canvas容器
+    // 创建canvas容器（侧边栏版本）
     const canvasWrapper = document.createElement('div');
-    canvasWrapper.id = 'tagcloud-canvas-wrapper';
+    canvasWrapper.id = 'sidebar-tagcloud-wrapper';
     canvasWrapper.style.cssText = `
       width: 100%;
-      min-height: 500px;
+      min-height: 350px;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 40px 20px;
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      margin: 20px 0;
+      padding: 20px 10px;
+      background: transparent;
+      margin: 10px 0;
     `;
 
     // 创建canvas
     const canvas = document.createElement('canvas');
-    canvas.id = 'tagcloud-canvas';
-    canvas.width = 800;
-    canvas.height = 600;
+    canvas.id = 'sidebar-tagcloud-canvas';
+    canvas.width = 400;
+    canvas.height = 400;
     canvas.style.maxWidth = '100%';
     canvas.style.height = 'auto';
 
     canvasWrapper.appendChild(canvas);
 
-    // 获取所有标签
-    const tags = Array.from(tagCloudContainer.querySelectorAll('a'));
+    // 获取侧边栏的所有标签
+    const tags = Array.from(sidebarTagCloud.querySelectorAll('a'));
     if (tags.length === 0) {
-      console.log('没有找到标签');
+      console.log('侧边栏没有找到标签');
       return;
     }
 
-    console.log(`找到 ${tags.length} 个标签`);
+    console.log(`找到 ${tags.length} 个侧边栏标签`);
 
     // 创建标签数据
     const tagData = tags.map(tag => ({
       text: tag.textContent.trim(),
       url: tag.href,
-      size: 14 + Math.random() * 16, // 14-30px
+      size: 10 + Math.random() * 8, // 10-18px (侧边栏较小)
       color: getRandomColor()
     }));
 
     // 隐藏原始标签列表
-    tagCloudContainer.style.display = 'none';
+    sidebarTagCloud.style.display = 'none';
 
-    // 在标签列表前插入canvas
-    tagCloudContainer.parentNode.insertBefore(canvasWrapper, tagCloudContainer);
+    // 在侧边栏标签卡片中插入canvas
+    const cardWidget = sidebarTagCloud.closest('.card-widget');
+    if (cardWidget) {
+      cardWidget.appendChild(canvasWrapper);
+    }
 
     // 初始化3D标签云
     init3DTagCloud(canvas, tagData);
