@@ -223,7 +223,7 @@ body::after {
 #sidebar-tagcloud-wrapper {
   position: relative;
   width: 100%;
-  min-height: 350px;
+  min-height: 450px;
   background: transparent;
   margin: 10px 0;
   overflow: hidden;
@@ -247,12 +247,12 @@ body::after {
 /* 移动端适配 */
 @media (max-width: 768px) {
   #sidebar-tagcloud-wrapper {
-    min-height: 300px;
+    min-height: 350px;
   }
   
   #sidebar-tagcloud-canvas {
     width: 100% !important;
-    height: 300px !important;
+    height: 350px !important;
   }
 }
 

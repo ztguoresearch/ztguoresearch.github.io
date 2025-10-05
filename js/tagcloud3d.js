@@ -45,7 +45,7 @@
     canvasWrapper.id = 'sidebar-tagcloud-wrapper';
     canvasWrapper.style.cssText = `
       width: 100%;
-      min-height: 350px;
+      min-height: 450px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -57,8 +57,8 @@
     // 创建canvas
     const canvas = document.createElement('canvas');
     canvas.id = 'sidebar-tagcloud-canvas';
-    canvas.width = 400;
-    canvas.height = 400;
+    canvas.width = 500;
+    canvas.height = 500;
     canvas.style.maxWidth = '100%';
     canvas.style.height = 'auto';
 
@@ -77,7 +77,7 @@
     const tagData = tags.map(tag => ({
       text: tag.textContent.trim(),
       url: tag.href,
-      size: 10 + Math.random() * 8, // 10-18px (侧边栏较小)
+      size: 12 + Math.random() * 10, // 12-22px (增大字体)
       color: getRandomColor()
     }));
 
@@ -100,7 +100,7 @@
     const height = canvas.height;
     const centerX = width / 2;
     const centerY = height / 2;
-    const radius = Math.min(width, height) / 3;
+    const radius = Math.min(width, height) / 2.5; // 增大球体半径
 
     // 3D标签对象
     const tags3D = tagData.map((tag, index) => {
