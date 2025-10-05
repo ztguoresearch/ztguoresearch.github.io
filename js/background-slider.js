@@ -1,4 +1,4 @@
-// 背景图片轮播效果
+// 背景图片轮播效果 - 同步首页顶部图和背景图
 document.addEventListener('DOMContentLoaded', function() {
   const images = [
     '/img/傍晚路灯.png',
@@ -8,34 +8,35 @@ document.addEventListener('DOMContentLoaded', function() {
   
   let currentIndex = 0;
   
-  // 获取页面头部元素
+  // 获取页面头部元素和背景元素
   const pageHeader = document.getElementById('page-header');
-  
-  if (pageHeader) {
-    // 设置初始背景
-    pageHeader.style.backgroundImage = `url('${images[0]}')`;
-    pageHeader.style.backgroundSize = 'cover';
-    pageHeader.style.backgroundPosition = 'center';
-    pageHeader.style.transition = 'background-image 1s ease-in-out';
-    
-    // 每5秒切换一次背景
-    setInterval(function() {
-      currentIndex = (currentIndex + 1) % images.length;
-      pageHeader.style.backgroundImage = `url('${images[currentIndex]}')`;
-    }, 5000);
-  }
-  
-  // 同时设置 web_bg 背景（如果存在）
   const webBg = document.getElementById('web_bg');
-  if (webBg) {
-    webBg.style.backgroundImage = `url('${images[0]}')`;
-    webBg.style.backgroundSize = 'cover';
-    webBg.style.backgroundPosition = 'center';
-    webBg.style.transition = 'background-image 1s ease-in-out';
+  
+  // 统一设置背景图片的函数
+  function setBackgroundImage(index) {
+    const imageUrl = `url('${images[index]}')`;
     
-    setInterval(function() {
-      const bgIndex = Math.floor(Date.now() / 5000) % images.length;
-      webBg.style.backgroundImage = `url('${images[bgIndex]}')`;
-    }, 5000);
+    if (pageHeader) {
+      pageHeader.style.backgroundImage = imageUrl;
+      pageHeader.style.backgroundSize = 'cover';
+      pageHeader.style.backgroundPosition = 'center';
+      pageHeader.style.transition = 'background-image 1s ease-in-out';
+    }
+    
+    if (webBg) {
+      webBg.style.backgroundImage = imageUrl;
+      webBg.style.backgroundSize = 'cover';
+      webBg.style.backgroundPosition = 'center';
+      webBg.style.transition = 'background-image 1s ease-in-out';
+    }
   }
+  
+  // 设置初始背景
+  setBackgroundImage(0);
+  
+  // 每5秒同步切换一次背景（首页顶部图和背景图同时切换）
+  setInterval(function() {
+    currentIndex = (currentIndex + 1) % images.length;
+    setBackgroundImage(currentIndex);
+  }, 5000);
 });

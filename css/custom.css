@@ -1,42 +1,44 @@
-/* 背景图片轮播效果 */
+/* 背景图片样式 - 由 JS 动态控制轮播 */
 #web_bg,
-body::before {
-  background: url('/img/傍晚路灯.png') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  animation: backgroundSlide 15s infinite;
-}
-
-/* 直接设置 body 背景 */
+#page-header,
 body {
-  background: url('/img/傍晚路灯.png') no-repeat center center fixed !important;
   background-size: cover !important;
-  animation: backgroundSlide 15s infinite;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  transition: background-image 1.5s ease-in-out !important;
 }
 
-/* 背景轮播动画 */
-@keyframes backgroundSlide {
-  0%, 100% {
-    background-image: url('/img/傍晚路灯.png');
-  }
-  33% {
-    background-image: url('/img/小白-煤炭镇.png');
-  }
-  66% {
-    background-image: url('/img/蜡笔小新-看电视.png');
-  }
+/* 确保背景元素正确显示 */
+#web_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
 }
 
-/* 确保内容区域有透明度或半透明背景 */
+/* 确保内容区域有适当的背景以提高可读性 */
 #page,
-#content-outer,
-.layout {
+#content-outer {
   background: transparent !important;
 }
 
-/* 给内容区域添加一个半透明背景以提高可读性 */
+/* 给主要内容区域添加半透明背景 */
 #content-inner {
-  background: rgba(255, 255, 255, 0.85) !important;
+  background: rgba(255, 255, 255, 0.9) !important;
   border-radius: 8px;
   padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 侧边栏卡片背景 */
+.card-widget {
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 文章卡片背景 */
+.recent-post-item {
+  background: rgba(255, 255, 255, 0.9) !important;
 }
