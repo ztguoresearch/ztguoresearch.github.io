@@ -219,13 +219,13 @@ body::after {
   box-shadow: 0 0 15px rgba(73, 177, 245, 0.3);
 }
 
-/* ========== 侧边栏3D球形标签云效果（增大50%）========== */
+/* ========== 侧边栏3D球形标签云效果（增大到2倍）========== */
 #sidebar-tagcloud-wrapper {
   position: relative;
   width: 100%;
-  min-height: 525px;
+  min-height: 700px;
   background: transparent;
-  margin: 15px 0;
+  margin: 20px 0;
   overflow: hidden;
 }
 
@@ -247,12 +247,12 @@ body::after {
 /* 移动端适配 */
 @media (max-width: 768px) {
   #sidebar-tagcloud-wrapper {
-    min-height: 450px;
+    min-height: 500px;
   }
   
   #sidebar-tagcloud-canvas {
     width: 100% !important;
-    height: 450px !important;
+    height: 500px !important;
   }
 }
 
