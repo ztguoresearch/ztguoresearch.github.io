@@ -1,0 +1,42 @@
+/* 背景图片轮播效果 */
+#web_bg,
+body::before {
+  background: url('/img/傍晚路灯.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: backgroundSlide 15s infinite;
+}
+
+/* 直接设置 body 背景 */
+body {
+  background: url('/img/傍晚路灯.png') no-repeat center center fixed !important;
+  background-size: cover !important;
+  animation: backgroundSlide 15s infinite;
+}
+
+/* 背景轮播动画 */
+@keyframes backgroundSlide {
+  0%, 100% {
+    background-image: url('/img/傍晚路灯.png');
+  }
+  33% {
+    background-image: url('/img/小白-煤炭镇.png');
+  }
+  66% {
+    background-image: url('/img/蜡笔小新-看电视.png');
+  }
+}
+
+/* 确保内容区域有透明度或半透明背景 */
+#page,
+#content-outer,
+.layout {
+  background: transparent !important;
+}
+
+/* 给内容区域添加一个半透明背景以提高可读性 */
+#content-inner {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-radius: 8px;
+  padding: 20px;
+}
