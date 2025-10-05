@@ -15,9 +15,26 @@
 
   function initTagCloud() {
     // 只在侧边栏标签云应用3D效果，不影响标签页面
-    const sidebarTagCloud = document.querySelector('#aside-content .card-tag-cloud');
+    // 确保不是在标签页面（/tags/）
+    if (window.location.pathname.includes('/tags/')) {
+      console.log('标签页面，不应用3D效果');
+      return;
+    }
+    
+    // 尝试多个选择器找到侧边栏标签云
+    let sidebarTagCloud = document.querySelector('#aside-content .card-tag-cloud');
+    if (!sidebarTagCloud) {
+      sidebarTagCloud = document.querySelector('.card-tag-cloud');
+    }
+    
     if (!sidebarTagCloud) {
       console.log('侧边栏标签云容器未找到');
+      return;
+    }
+    
+    // 确保找到的是侧边栏的标签云，不是页面主体的
+    if (!sidebarTagCloud.closest('#aside-content')) {
+      console.log('不是侧边栏标签云，跳过');
       return;
     }
 
