@@ -42,3 +42,148 @@ body {
 .recent-post-item {
   background: rgba(255, 255, 255, 0.9) !important;
 }
+
+/* ========== 页脚雾化背景效果 ========== */
+#footer {
+  background: transparent !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 页脚背景图片层 */
+#footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(10px) brightness(0.7);
+  z-index: -1;
+}
+
+/* 页脚半透明遮罩层 */
+#footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+/* 页脚文字颜色调整 */
+#footer,
+#footer * {
+  position: relative;
+  color: #fff !important;
+}
+
+#footer a {
+  color: #fff !important;
+  opacity: 0.9;
+}
+
+#footer a:hover {
+  opacity: 1;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* 页脚包裹容器 */
+#footer-wrap {
+  background: transparent !important;
+}
+
+/* 移除原有的蓝色背景 */
+.footer_custom_text,
+#footer-copyright {
+  background: transparent !important;
+}
+
+/* ========== 标签页动态效果 ========== */
+/* 标签云动态效果 */
+#tag-cloud a {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-decoration: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tag-cloud a:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 标签卡片中的标签 */
+.card-tag-cloud a {
+  display: inline-block;
+  margin: 3px 5px;
+  padding: 5px 12px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.card-tag-cloud a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* 标签页面布局优化 */
+.tag-cloud-tags {
+  text-align: center;
+  padding: 20px;
+}
+
+/* 侧边栏标签云效果 */
+#aside-content .card-tag-cloud {
+  padding: 10px;
+}
+
+/* 标签颜色渐变动画 */
+@keyframes tagPulse {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.card-tag-cloud a {
+  animation: tagPulse 3s ease-in-out infinite;
+}
+
+.card-tag-cloud a:nth-child(odd) {
+  animation-delay: 0.5s;
+}
+
+/* 搜索框美化 */
+.search-dialog {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.search-dialog input {
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.search-dialog input:focus {
+  border-color: #49b1f5;
+  box-shadow: 0 0 15px rgba(73, 177, 245, 0.3);
+}

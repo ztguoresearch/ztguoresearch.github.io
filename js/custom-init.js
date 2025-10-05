@@ -43,6 +43,15 @@ window.addEventListener('load', function() {
     document.body.style.backgroundAttachment = 'fixed';
     document.body.style.transition = 'background-image 1.5s ease-in-out';
     
+    // 4. 设置页脚背景（雾化效果通过CSS控制）
+    const footer = document.getElementById('footer');
+    if (footer) {
+      footer.style.backgroundImage = `url('${imageUrl}')`;
+      footer.style.backgroundSize = 'cover';
+      footer.style.backgroundPosition = 'center center';
+      footer.style.backgroundAttachment = 'fixed';
+    }
+    
     console.log('背景已切换到图片 ' + (index + 1) + ':', imageUrl);
   }
   
