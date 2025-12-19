@@ -1,0 +1,189 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>标签: TheVerge | 風に向かって的个人博客</title><meta name="author" content="mrguo"><meta name="copyright" content="mrguo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="这是我的个人博客，记录学习和生活">
+<meta property="og:type" content="website">
+<meta property="og:title" content="風に向かって的个人博客">
+<meta property="og:url" content="https://ztguoresearch.github.io/tags/TheVerge/page/5/index.html">
+<meta property="og:site_name" content="風に向かって的个人博客">
+<meta property="og:description" content="这是我的个人博客，记录学习和生活">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ztguoresearch.github.io/img/touxiang.png">
+<meta property="article:author" content="mrguo">
+<meta property="article:tag" content="博客, 技术, 生活">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ztguoresearch.github.io/img/touxiang.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ztguoresearch.github.io/tags/TheVerge/page/5/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":300,"highlightFullpage":true,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '标签: TheVerge',
+  isHighlightShrink: true,
+  isToc: false,
+  pageType: 'tag'
+}</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"><meta name="generator" content="Hexo 8.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/touxiang.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">77</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/papers/"><i class="fa-fw fas fa-file-alt"></i><span> 论文追踪</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">風に向かって的个人博客</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/papers/"><i class="fa-fw fas fa-file-alt"></i><span> 论文追踪</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">TheVerge</h1></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/2025/11/05/AI%E6%96%B0%E9%97%BB-2025-11-04/" title="2025-11-04 AI新闻日报"><img class="post-bg" src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-11-04 AI新闻日报"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/11/05/AI%E6%96%B0%E9%97%BB-2025-11-04/" title="2025-11-04 AI新闻日报">2025-11-04 AI新闻日报</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-11-05T04:08:14.000Z" title="发表于 2025-11-05 12:08:14">2025-11-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/AI%E6%96%B0%E9%97%BB/">AI新闻</a></span></div><div class="content">📰 2025-11-04 AI新闻日报 每日精选AI领域最新资讯，助您快速了解行业动态     🚀 TechCrunch 新闻1. 英伟达、高通加入美印风投，助力印度打造下一代深度科技初创企业📌 摘要 英伟达和高通风投加入印度深度科技联盟，支持印初创企业。该联盟承诺投入超10亿美元，配合印度政府1万亿卢比研发计划。英伟达提供技术指导，高通联合6家印风投追加8.5亿美元投资。印度正从模仿西方模式转向攻坚基础设施级技术难题，但深度科技领域仍面临资金短缺。 🔗 原文链接  查看完整文章 原标题: NVIDIA, Qualcomm join U.S., Indian VCs to help build India’s next deep tech startups   2. 特朗普变卦，再次提名贾里德·艾萨克曼领导NASA。📌 摘要 特朗普宣布重新提名亿万富翁艾萨克曼担任NASA负责人。此前马斯克等人批评代理局长达菲，艾萨克曼指控“政治操盘手”制造矛盾，并公布其NASA愿景计划争取支持。 🔗 原文链接  查看完整文章 原标题: Trump flips and re-nomin...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2025/11/04/AI%E6%96%B0%E9%97%BB-2025-11-03/" title="2025-11-03 AI新闻日报"><img class="post-bg" src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-11-03 AI新闻日报"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/11/04/AI%E6%96%B0%E9%97%BB-2025-11-03/" title="2025-11-03 AI新闻日报">2025-11-03 AI新闻日报</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-11-04T04:03:05.000Z" title="发表于 2025-11-04 12:03:05">2025-11-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/AI%E6%96%B0%E9%97%BB/">AI新闻</a></span></div><div class="content">📰 2025-11-03 AI新闻日报 每日精选AI领域最新资讯，助您快速了解行业动态     🚀 TechCrunch 新闻1. a16z暂停其著名的TxO基金并裁员，该基金旨在扶持弱势群体创始人📌 摘要 知名风投a16z宣布暂停其2020年推出的TxO基金及扶持计划。该计划旨在帮助缺乏传统风投资源的创业者，已支持超60家公司，提供培训及17.5万美元投资。暂停原因系调整运营模式，未来将整合至a16z早期投资战略。部分员工被裁，项目被外界视为科技界缩减多元性投入的缩影。 🔗 原文链接  查看完整文章 原标题: a16z pauses its famed TxO Fund for underserved founders, lays off staff   2. 埃拉德·吉尔解析：哪些AI赛道已现赢家，哪些仍处蓝海📌 摘要 知名投资人Elad Gil在TechCrunch Disrupt 2025表示，AI是迄今最不可预测的技术浪潮。他认为基础模型、AI编程辅助、医疗转录和客服领域已形成市场领导者，而金融科技、会计、AI安全等领域仍处开放竞争状态。Gil指出，当前企业客...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2025/11/03/AI%E6%96%B0%E9%97%BB-2025-11-02/" title="2025-11-02 AI新闻日报"><img class="post-bg" src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-11-02 AI新闻日报"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/11/03/AI%E6%96%B0%E9%97%BB-2025-11-02/" title="2025-11-02 AI新闻日报">2025-11-02 AI新闻日报</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-11-03T04:01:50.000Z" title="发表于 2025-11-03 12:01:50">2025-11-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/AI%E6%96%B0%E9%97%BB/">AI新闻</a></span></div><div class="content">📰 2025-11-02 AI新闻日报 每日精选AI领域最新资讯，助您快速了解行业动态     🚀 TechCrunch 新闻1. 凯文·罗斯对AI硬件的简单测试标准——你会想揍戴着它的人吗？📌 摘要 资深投资人Kevin Rose对当前AI硬件热潮持谨慎态度，认为许多产品忽视用户情感需求和社会接受度。他主张投资应聚焦具有突破性理念的创业者，并指出AI正降低创业门槛，未来风投的核心竞争力将转向高情商和长期陪伴能力。 🔗 原文链接  查看完整文章 原标题: Kevin Rose’s simple test for AI hardware — would you want to punch someone in the face who’s wearing it?   2. 谷歌母公司为何频频将”登月项目”分拆为独立公司？📌 摘要 Alphabet旗下X实验室改变项目孵化模式，将更多前沿技术项目分拆为独立公司而非保留在集团内。该战略由5亿美元专项基金支持，仅投资X分拆项目。负责人称此举可让部分项目更快发展，同时保持战略合作。X对项目采取严格筛选机制，成功率仅2%。2025年...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2025/11/02/AI%E6%96%B0%E9%97%BB-2025-11-01/" title="2025-11-01 AI新闻日报"><img class="post-bg" src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-11-01 AI新闻日报"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/11/02/AI%E6%96%B0%E9%97%BB-2025-11-01/" title="2025-11-01 AI新闻日报">2025-11-01 AI新闻日报</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-11-02T04:01:28.000Z" title="发表于 2025-11-02 12:01:28">2025-11-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/AI%E6%96%B0%E9%97%BB/">AI新闻</a></span></div><div class="content">📰 2025-11-01 AI新闻日报 每日精选AI领域最新资讯，助您快速了解行业动态     🚀 TechCrunch 新闻1. 埃隆·马斯克澄清：山姆·奥特曼的特斯拉跑车已获退款📌 摘要 马斯克与奥特曼在社交媒体X上再度交锋。奥特曼发帖称等待特斯拉跑车7.5年未果要求退款，马斯克回应称其“窃取非营利机构”并指责其隐瞒24小时内已退款的事实。双方曾共同创立OpenAI，如今因商业竞争及理念分歧持续对立。 🔗 原文链接  查看完整文章 原标题: Elon Musk wants you to know that Sam Altman got a refund for his Tesla Roadster   2. Coinbase首席执行官布莱恩·阿姆斯特朗嘲讽预测市场📌 摘要 Coinbase CEO阿姆斯特朗在财报电话会议上突然提及加密货币相关词汇，被曝光是为了影响预测市场用户的押注结果。此举引发行业人士批评，认为其公开操纵市场损害行业形象。尽管Coinbase自身正布局预测市场业务，但公司规定禁止员工参与相关活动。阿姆斯特朗事后称此举是团队聊天时自发行为。 🔗 原...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2025/11/01/AI%E6%96%B0%E9%97%BB-2025-10-31/" title="2025-10-31 AI新闻日报"><img class="post-bg" src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-10-31 AI新闻日报"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/11/01/AI%E6%96%B0%E9%97%BB-2025-10-31/" title="2025-10-31 AI新闻日报">2025-10-31 AI新闻日报</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-11-01T04:02:35.000Z" title="发表于 2025-11-01 12:02:35">2025-11-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/AI%E6%96%B0%E9%97%BB/">AI新闻</a></span></div><div class="content">📰 2025-10-31 AI新闻日报 每日精选AI领域最新资讯，助您快速了解行业动态     🚀 TechCrunch 新闻1. Bending Spoons是什么？关于AOL收购方的一切信息📌 摘要 意大利科技集团Bending Spoons四位联合创始人跻身亿万富豪，公司近期完成7.1亿美元融资并加速收购，包括AOL、Vimeo等知名品牌。该公司专注收购停滞但受欢迎的数字产品，通过产品优化和裁员重组实现增长，目前估值超百亿美元，持有超300款产品服务全球逾10亿用户。 🔗 原文链接  查看完整文章 原标题: What is Bending Spoons? Everything to know about AOL’s acquirer   2. Bluesky用户突破4000万，新增”踩”功能测试📌 摘要 社交平台Bluesky宣布用户达4000万，将测试“不喜欢”功能以优化内容推荐排序，同时改进回复机制、加强不良内容检测，并新增社交关系图谱功能，旨在提升用户体验与内容相关性。平台强调通过工具赋予用户更多自主管理权限，而非直接封禁争议账号。 🔗 原文链接  查看完...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2025/10/31/AI%E6%96%B0%E9%97%BB-2025-10-30/" title="2025-10-30 AI新闻日报"><img class="post-bg" src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-10-30 AI新闻日报"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/10/31/AI%E6%96%B0%E9%97%BB-2025-10-30/" title="2025-10-30 AI新闻日报">2025-10-30 AI新闻日报</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-10-31T04:01:57.000Z" title="发表于 2025-10-31 12:01:57">2025-10-31</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/AI%E6%96%B0%E9%97%BB/">AI新闻</a></span></div><div class="content">📰 2025-10-30 AI新闻日报 每日精选AI领域最新资讯，助您快速了解行业动态     🚀 TechCrunch 新闻1. 纳凡公司IPO首日暴涨后暴跌20% 曾以特殊方式完成上市📌 摘要 企业差旅费用平台Navan在纳斯达克首日交易下跌20%，估值降至47亿美元。该公司成为首家利用美国证券交易委员会新规、在政府停摆期间完成IPO的企业。这一新机制允许企业绕过SEC人工审核自动获批，但存在后续被审查的风险。尽管去年营收达6.13亿美元，公司仍亏损1.88亿美元。其IPO表现正被其他拟上市公司密切关注。 🔗 原文链接  查看完整文章 原标题: Navan IPO tumbles 20% after historic debut under SEC shutdown workaround   2. 据报道，英伟达将向Poolside投资高达10亿美元。📌 摘要 英伟达拟向AI初创公司Poolside投资5亿至10亿美元，作为后者20亿美元融资轮的一部分。若融资顺利完成，投资额可能增至10亿美元。这是英伟达继2024年10月后对Poolside的第二次投资，近期还布局...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2025/10/30/AI%E6%96%B0%E9%97%BB-2025-10-29/" title="2025-10-29 AI新闻日报"><img class="post-bg" src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-10-29 AI新闻日报"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/10/30/AI%E6%96%B0%E9%97%BB-2025-10-29/" title="2025-10-29 AI新闻日报">2025-10-29 AI新闻日报</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-10-30T04:02:58.000Z" title="发表于 2025-10-30 12:02:58">2025-10-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/AI%E6%96%B0%E9%97%BB/">AI新闻</a></span></div><div class="content">📰 2025-10-29 AI新闻日报 每日精选AI领域最新资讯，助您快速了解行业动态     🚀 TechCrunch 新闻1. 印度Snabbit公司凭借快速家政服务策略，五个月内估值翻倍达1.8亿美元。📌 摘要 印度按需家政服务平台Snabbit完成3000万美元C轮融资，估值达1.8亿美元。该平台通过5000名女性服务人员提供10分钟速达的家政服务，日均订单从5月的1000单增至超1万单。目前覆盖5大城市40个微区域，用户超30万。创始人表示将深耕高频服务领域，与竞争对手形成差异化发展。 🔗 原文链接  查看完整文章 原标题: India’s Snabbit valuation doubled to $180M in 5 months on its quick house-help bet   2. Cluely公司罗伊·李谈初创企业营销的”愤怒诱饵”策略📌 摘要 Cluely创始人Roy Lee在Disrupt 2025大会上表示，初创企业应重视病毒式传播。他认为工程师通常不擅长内容创作，并分享自身通过争议性言论使公司爆红的经验。其公司曾因“作弊助手”争议获得...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2025/10/29/AI%E6%96%B0%E9%97%BB-2025-10-28/" title="2025-10-28 AI新闻日报"><img class="post-bg" src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-10-28 AI新闻日报"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/10/29/AI%E6%96%B0%E9%97%BB-2025-10-28/" title="2025-10-28 AI新闻日报">2025-10-28 AI新闻日报</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-10-29T04:04:23.000Z" title="发表于 2025-10-29 12:04:23">2025-10-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/AI%E6%96%B0%E9%97%BB/">AI新闻</a></span></div><div class="content">📰 2025-10-28 AI新闻日报 每日精选AI领域最新资讯，助您快速了解行业动态     🚀 TechCrunch 新闻1. 塔塔汽车证实已修复暴露公司及客户数据的安全漏洞。📌 摘要 印度塔塔汽车公司修复了其电商门户E-Dukaan的安全漏洞，这些漏洞曾导致客户个人信息、内部财务报告及经销商数据等敏感信息暴露。安全研究员于2023年8月发现漏洞并上报，该公司确认所有漏洞已在当年完成修复，但未说明是否通知受影响客户。 🔗 原文链接  查看完整文章 原标题: Tata Motors confirms it fixed security flaws, which exposed company and customer data   2. 以下是2025年TechCrunch Disrupt大会创业竞技场五强名单📌 摘要 经过两日角逐，2025年TechCrunch创业大赛五强诞生。决赛将于太平洋时间周三11:30举行，冠军将获得10万美元奖金及战杯。入围项目包括：Charter Space（航天金融科技）、Glīd（集装箱智能转运）、MacroCycle（低成本塑料回...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2025/10/28/AI%E6%96%B0%E9%97%BB-2025-10-27/" title="2025-10-27 AI新闻日报"><img class="post-bg" src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-10-27 AI新闻日报"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/10/28/AI%E6%96%B0%E9%97%BB-2025-10-27/" title="2025-10-27 AI新闻日报">2025-10-27 AI新闻日报</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-10-28T04:09:06.000Z" title="发表于 2025-10-28 12:09:06">2025-10-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/AI%E6%96%B0%E9%97%BB/">AI新闻</a></span></div><div class="content">📰 2025-10-27 AI新闻日报 每日精选AI领域最新资讯，助您快速了解行业动态     🚀 TechCrunch 新闻1. 红杉资本合伙人：风险投资并非资产类别。📌 摘要 红杉资本合伙人博萨在TechCrunch Disrupt 2025表示，风险投资并非资产类别，过多资金涌入硅 Valley 反而会稀释优质企业资源。他指出，过去20年行业仅诞生约380家估值超10亿美元的公司，当前美国风投机构数量已增至3000家，但资金规模扩大未必能催生更多成功企业。 🔗 原文链接  查看完整文章 原标题: Venture capital is not an asset class, says Sequoia’s Roelof Botha   2. Alphabet旗下X部门首席执行官阿斯特罗·泰勒谈”登月项目”成功要素📌 摘要 Alphabet旗下X公司CEO在TechCrunch Disrupt 2025大会上阐述了“登月计划”三要素：解决重大问题、提供解决方案、具备突破性技术。该公司奉行“快速试错”原则，每年启动超100个项目，仅2%能成功。X鼓励大胆设想并早期验证想法...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2025/10/27/AI%E6%96%B0%E9%97%BB-2025-10-26/" title="2025-10-26 AI新闻日报"><img class="post-bg" src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-10-26 AI新闻日报"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/10/27/AI%E6%96%B0%E9%97%BB-2025-10-26/" title="2025-10-26 AI新闻日报">2025-10-26 AI新闻日报</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-10-27T04:01:23.000Z" title="发表于 2025-10-27 12:01:23">2025-10-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/AI%E6%96%B0%E9%97%BB/">AI新闻</a></span></div><div class="content">📰 2025-10-26 AI新闻日报 每日精选AI领域最新资讯，助您快速了解行业动态     🚀 TechCrunch 新闻1. Accel与Prosus联手投资印度早期初创企业📌 摘要 知名投资机构Accel与Prosus宣布合作，共同投资印度早期初创企业，重点支持解决自动化、能源转型、互联网服务等领域系统性问题的项目。双方将联合注资，初期投资额10万至100万美元。该合作旨在推动印度从复制全球模式转向创新本土解决方案，助力其成为发达国家。印度庞大的人口基数、数字基础设施及技术人才储备吸引了全球资本长期布局。 🔗 原文链接  查看完整文章 原标题: Accel and Prosus team up to back early-stage Indian startups   2. 苹果地图明年或将引入广告📌 摘要 据彭博社报道，苹果地图或将于明年引入广告，允许实体商家付费推广。苹果计划通过优化界面和AI技术提升体验，但用户可能对设备广告增多产生抵触。 🔗 原文链接  查看完整文章 原标题: Ads might be coming to Apple Maps next...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/tags/TheVerge/page/4/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/tags/TheVerge/">1</a><span class="space">&hellip;</span><a class="page-number" href="/tags/TheVerge/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/tags/TheVerge/page/6/">6</a><a class="page-number" href="/tags/TheVerge/page/7/">7</a><a class="extend next" rel="next" href="/tags/TheVerge/page/6/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/touxiang.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">mrguo</div><div class="author-info-description">这是我的个人博客，记录学习和生活</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">77</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ztguoresearch"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/ztguoresearch" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:ztguoresearch@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog.csdn.net/weixin_60594413?spm=1000.2115.3001.5343" target="_blank" title="CSDN"><i class="fas fa-copyright" style="color: #fc5531;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/12/19/AI%E6%96%B0%E9%97%BB-2025-12-18/" title="2025-12-18 AI新闻日报"><img src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-12-18 AI新闻日报"/></a><div class="content"><a class="title" href="/2025/12/19/AI%E6%96%B0%E9%97%BB-2025-12-18/" title="2025-12-18 AI新闻日报">2025-12-18 AI新闻日报</a><time datetime="2025-12-19T04:02:46.000Z" title="发表于 2025-12-19 12:02:46">2025-12-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/18/AI%E6%96%B0%E9%97%BB-2025-12-17/" title="2025-12-17 AI新闻日报"><img src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-12-17 AI新闻日报"/></a><div class="content"><a class="title" href="/2025/12/18/AI%E6%96%B0%E9%97%BB-2025-12-17/" title="2025-12-17 AI新闻日报">2025-12-17 AI新闻日报</a><time datetime="2025-12-18T04:02:22.000Z" title="发表于 2025-12-18 12:02:22">2025-12-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/17/AI%E6%96%B0%E9%97%BB-2025-12-16/" title="2025-12-16 AI新闻日报"><img src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-12-16 AI新闻日报"/></a><div class="content"><a class="title" href="/2025/12/17/AI%E6%96%B0%E9%97%BB-2025-12-16/" title="2025-12-16 AI新闻日报">2025-12-16 AI新闻日报</a><time datetime="2025-12-17T04:02:58.000Z" title="发表于 2025-12-17 12:02:58">2025-12-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/16/AI%E6%96%B0%E9%97%BB-2025-12-15/" title="2025-12-15 AI新闻日报"><img src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-12-15 AI新闻日报"/></a><div class="content"><a class="title" href="/2025/12/16/AI%E6%96%B0%E9%97%BB-2025-12-15/" title="2025-12-15 AI新闻日报">2025-12-15 AI新闻日报</a><time datetime="2025-12-16T04:03:12.000Z" title="发表于 2025-12-16 12:03:12">2025-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/15/AI%E6%96%B0%E9%97%BB-2025-12-14/" title="2025-12-14 AI新闻日报"><img src="/img/ai-news-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2025-12-14 AI新闻日报"/></a><div class="content"><a class="title" href="/2025/12/15/AI%E6%96%B0%E9%97%BB-2025-12-14/" title="2025-12-14 AI新闻日报">2025-12-14 AI新闻日报</a><time datetime="2025-12-15T04:01:08.000Z" title="发表于 2025-12-15 12:01:08">2025-12-15</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI%E6%96%B0%E9%97%BB/"><span class="card-category-list-name">AI新闻</span><span class="card-category-list-count">70</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Web%E5%BC%80%E5%8F%91/"><span class="card-category-list-name">Web开发</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%BB%8F%E9%AA%8C/"><span class="card-category-list-name">学习经验</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">技术笔记</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/"><span class="card-category-list-name">日常</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"><span class="card-category-list-name">编程语言</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/AI/" style="font-size: 1.45em; color: rgb(71, 62, 50);">AI</a><a href="/tags/%E6%96%B0%E9%97%BB/" style="font-size: 1.35em; color: rgb(50, 186, 50);">新闻</a><a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 1.35em; color: rgb(50, 116, 157);">人工智能</a><a href="/tags/TechCrunch/" style="font-size: 1.35em; color: rgb(50, 159, 142);">TechCrunch</a><a href="/tags/TheVerge/" style="font-size: 1.35em; color: rgb(55, 134, 137);">TheVerge</a><a href="/tags/Python/" style="font-size: 1.25em; color: rgb(50, 62, 91);">Python</a><a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" style="font-size: 1.15em; color: rgb(50, 50, 193);">数据分析</a><a href="/tags/Pandas/" style="font-size: 1.15em; color: rgb(97, 191, 121);">Pandas</a><a href="/tags/NumPy/" style="font-size: 1.15em; color: rgb(81, 50, 50);">NumPy</a><a href="/tags/Matplotlib/" style="font-size: 1.15em; color: rgb(76, 185, 165);">Matplotlib</a><a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.15em; color: rgb(126, 195, 78);">前端</a><a href="/tags/JavaScript/" style="font-size: 1.15em; color: rgb(145, 167, 76);">JavaScript</a><a href="/tags/HTML/" style="font-size: 1.15em; color: rgb(101, 141, 129);">HTML</a><a href="/tags/CSS/" style="font-size: 1.15em; color: rgb(50, 59, 166);">CSS</a><a href="/tags/React/" style="font-size: 1.15em; color: rgb(200, 113, 120);">React</a><a href="/tags/Vue/" style="font-size: 1.15em; color: rgb(80, 122, 145);">Vue</a><a href="/tags/%E4%BF%9D%E7%A0%94/" style="font-size: 1.15em; color: rgb(138, 136, 50);">保研</a><a href="/tags/%E5%9B%BD%E9%98%B2%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6/" style="font-size: 1.15em; color: rgb(50, 50, 50);">国防科技大学</a><a href="/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/" style="font-size: 1.15em; color: rgb(50, 50, 136);">经验分享</a><a href="/tags/%E6%8E%A8%E5%85%8D/" style="font-size: 1.15em; color: rgb(180, 50, 167);">推免</a><a href="/tags/LLM/" style="font-size: 1.15em; color: rgb(145, 111, 50);">LLM</a><a href="/tags/ChatGPT/" style="font-size: 1.15em; color: rgb(70, 153, 50);">ChatGPT</a><a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="font-size: 1.15em; color: rgb(143, 123, 50);">深度学习</a><a href="/tags/NLP/" style="font-size: 1.15em; color: rgb(189, 86, 85);">NLP</a><a href="/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/" style="font-size: 1.15em; color: rgb(128, 94, 118);">强化学习</a><a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 1.15em; color: rgb(141, 50, 191);">机器学习</a><a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.15em; color: rgb(137, 76, 50);">博客</a><a href="/tags/Hexo/" style="font-size: 1.15em; color: rgb(136, 50, 98);">Hexo</a><a href="/tags/%E5%BC%80%E5%A7%8B/" style="font-size: 1.15em; color: rgb(50, 64, 50);">开始</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/12/">
+            <span class="card-archive-list-date">
+              十二月 2025
+            </span>
+            <span class="card-archive-list-count">16</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/11/">
+            <span class="card-archive-list-date">
+              十一月 2025
+            </span>
+            <span class="card-archive-list-count">29</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/10/">
+            <span class="card-archive-list-date">
+              十月 2025
+            </span>
+            <span class="card-archive-list-count">32</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">77</div></div><div class="webinfo-item"><div class="item-name">运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2025-10-04T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-12-19T04:02:53.730Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By mrguo</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.0.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><div class="js-pjax"></div><div id="aplayer"></div><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="/js/music-player.js"></script><script src="/js/custom-init.js"></script><script src="/js/tagcloud3d.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章..." type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.1"></script></div></div></body></html>
